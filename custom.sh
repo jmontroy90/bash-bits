@@ -9,7 +9,7 @@ alias mkcd=mkcd_fn
 
 ## define `up N` to cd up N directories
 function cd_fn() {
-  cd $(printf "%0.s../" $(seq 1 $1))
+  cd $(printf "%.0s../" $(seq 1 $1))
 }
 alias up=cd_fn
 
